@@ -20,6 +20,8 @@ const Setup = () => {
                 <summary><strong>Navbar</strong></summary>
                 <p>Navbar section with tailwindcss</p>
                 <iframe src="https://retool.com/blog/building-a-react-navbar/" frameborder="0" width="65%" height="500px"></iframe>
+                <p>Navbar section with tailwindcss</p>
+                <iframe src="https://tailwindui.com/components/application-ui/navigation/navbars" frameborder="0" width="65%" height="500px"></iframe>
             </details>
         </Con>
     )
