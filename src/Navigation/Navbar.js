@@ -3,7 +3,7 @@ import search from '../assets/search.png';
 import person from '../assets/person.png';
 import bag from '../assets/bag.png';
 import heart from '../assets/heart.png';
-import {Outlet, Link } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 export default function Navbar() {
   return (
     <>
@@ -46,11 +46,21 @@ export default function Navbar() {
 
 
 
-              {/* Linklar */}
-              <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-2">
-                  <Link to='/' class="text-blue-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">магазин</Link>
-
+            {/* Linklar */}
+            <div class="hidden sm:block sm:ml-6">
+              <div class="flex space-x-2">
+                <div class="group inline-blok">
+                  <span class="text-blue-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">магазин</span>
+                  <ul class="bg-blue-800 transform scale-0 group-hover:scale-100 absolute transition duration-300 mt-4  min-w-32 p-3">
+                    <li class="rounded-sm px-3 py-1 text-white hover:text-yellow-500"><Link to='/blogs'>собственное производство</Link></li>
+                    <li class="rounded-sm px-3 py-1 text-white hover:text-yellow-500"><Link to='/blogs'>джинсы</Link></li>
+                    <li class="rounded-sm px-3 py-1 text-white hover:text-yellow-500"><Link to='/blogs'>обувь</Link></li>
+                    <li class="rounded-sm px-3 py-1 text-white hover:text-yellow-500"><Link to='/blogs'>Демисезон</Link></li>
+                    <li class="rounded-sm px-3 py-1 text-white hover:text-yellow-500"><Link to='/blogs'>Кроссовки и кеды</Link></li>
+                    <li class="rounded-sm px-3 py-1 text-white hover:text-yellow-500"><Link to='/setup'>летняя обувь </Link></li>
+                  </ul>
+                </div>
+                <div>
                   <Link to='/blogs' class="text-blue-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">о бренде</Link>
 
                   <Link to='/blogs' class="text-blue-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">отзывы</Link>
@@ -59,13 +69,9 @@ export default function Navbar() {
 
                   <Link to='/contact' class="text-blue-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">сервис и помощь</Link>
                 </div>
+
               </div>
-
-
-
-
-
-
+            </div>
             {/* iconlar */}
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button type="button" class="bg-white p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
@@ -124,7 +130,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <Outlet/>
+      <Outlet />
     </>
   );
 }

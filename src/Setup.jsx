@@ -23,6 +23,13 @@ const Setup = () => {
                 <p>Navbar section with tailwindcss</p>
                 <iframe src="https://tailwindui.com/components/application-ui/navigation/navbars" frameborder="0" width="65%" height="500px"></iframe>
             </details>
+            <details>
+                <summary><strong>Dropdown</strong></summary>
+                <p>Dropdown section with tailwindcss</p>
+                <iframe src="https://tailwindcomponents.com/component/nestable-dropdown-menu" frameborder="0" width="65%" height="500px"></iframe>
+                <p>Navbar section with tailwindcss</p>
+                <iframe src="https://tailwindui.com/components/application-ui/navigation/navbars" frameborder="0" width="65%" height="500px"></iframe>
+            </details>
         </Con>
     )
 }
